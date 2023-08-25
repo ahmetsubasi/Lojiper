@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, Button, Alert, } from 'react-native';
+import { View, 
+  Text, 
+  TextInput, 
+  Button, 
+  Alert, 
+} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import styles from './Login.styles'
 
@@ -14,18 +19,16 @@ const Login = ({navigation}) => {
     }
 
     try {
-      // Kullanıcının kayıt olduğu bilgileri AsyncStorage'den alalım
+
       const savedUsername = await AsyncStorage.getItem('savedUsername');
       const savedPassword = await AsyncStorage.getItem('savedPassword');
 
-      // Girilen kullanıcı adı ve şifre ile kaydedilen bilgileri karşılaştıralım
+
       if (savedUsername === username && savedPassword === password) {
-        // Giriş başarılı
-        console.log('Giriş yapıldı:', username);
-        // Diğer işlemleri burada yapabilirsiniz
+
         navigation.navigate('TicketScreen');
       } else {
-        // Kullanıcı adı veya şifre hatalı
+
         Alert.alert('Hata', 'Kullanıcı adı veya şifre hatalı.');
         return;
       }
@@ -36,12 +39,9 @@ const Login = ({navigation}) => {
     navigation.navigate('TicketScreen')
   };
 
-  const handleRegister = () => {
-    // Kayıt işlemleri burada gerçekleştirilebilir
-    console.log('Kayıt ol tıklandı');
-  };
-
+  
   function SignUp(){
+
     navigation.navigate('SignUpScreen')
 }
 
@@ -62,8 +62,12 @@ const Login = ({navigation}) => {
         onChangeText={setPassword}
       />
     <View style={styles.button}>
-    <Button title="Giriş Yap" onPress={handleLogin}  />
-    <Button title="Kayıt Ol" onPress={SignUp} />
+    <Button title="Giriş Yap"
+     onPress={handleLogin}  
+     />
+    <Button title="Kayıt Ol" 
+    onPress={SignUp} 
+    />
     </View>
     </View>
   );

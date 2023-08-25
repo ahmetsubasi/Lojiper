@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, Button, Alert, } from 'react-native';
+import { View, 
+  Text, 
+  TextInput, 
+  Button, 
+  Alert, 
+} from 'react-native';
 import styles from './SignUp.styles';
 
 const SignUp = ({navigation}) => {
@@ -22,10 +27,6 @@ const SignUp = ({navigation}) => {
       return;
     }
 
-    // Burada kayıt işlemleri yapılabilir
-    console.log('Kayıt olundu:', userName, userSurname, userId, userDate, password, email);
-
-    // Kayıt işlemi başarılı ise, Login ekranına yönlendirilebilir
     navigation.navigate('LoginScreen');
   };
 
@@ -78,7 +79,9 @@ const SignUp = ({navigation}) => {
         onChangeText={setPasswordAgain}
       />
      <View style={styles.btn} >
-     <Button title="Kayıt Ol" onPress={handleSignUp} />
+     <Button title="Kayıt Ol" 
+     onPress={handleSignUp} 
+     />
      </View>
     </View>
   );

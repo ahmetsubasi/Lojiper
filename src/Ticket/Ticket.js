@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
-import { View, Text, Button, ScrollView, Alert, } from 'react-native';
+import { View, 
+  Text, 
+  Button, 
+  ScrollView, 
+  Alert, 
+} from 'react-native';
 import styles from './Ticket.styles';
 import { SelectList } from 'react-native-dropdown-select-list'
 import Checkbox from 'expo-checkbox';
@@ -94,7 +99,9 @@ const [isChecked1, setChecked1] = useState(false);
       />
     </View>
       <View>
-      <Button title="Ara"  onPress={search} />
+      <Button title="Ara"  
+      onPress={search} 
+      />
       </View>
     </ScrollView>
   );

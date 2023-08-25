@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, Button, Alert, ActivityIndicator } from 'react-native';
+import { View, 
+  Text, 
+  TextInput, 
+  Button, 
+  Alert, 
+  ActivityIndicator 
+} from 'react-native';
 import styles from './Payment.styles'
 
 
@@ -20,8 +26,7 @@ const Payment = ({ navigation }) => {
     setIsLoading(true);
 
     setTimeout(() => {
-      setIsLoading(false);
-      console.log('Ödeme tamamlandı');
+    setIsLoading(false);
       navigation.navigate('ConfirmationScreen');
     }, 1000);
   };
@@ -54,7 +59,9 @@ const Payment = ({ navigation }) => {
         value={cardHolder}
         onChangeText={setCardHolder}
       />
-      <Button title="Ödeme Yap" onPress={handlePayment} />
+      <Button title="Ödeme Yap" 
+      onPress={handlePayment} 
+      />
       {isLoading && <ActivityIndicator size="large" color="#272643" />}
     </View>
   );

@@ -4,7 +4,7 @@ Bu proje, Lojiper adlı bir uygulamanın kaynak kodunu içerir. Lojiper, [React 
 
 ## Kurulum
 
-1. Projeyi bilgisayarınıza klonlayın: `git clone https://github.com/kullaniciadi/lojiper.git`
+1. Projeyi bilgisayarınıza klonlayın: `git clone https://github.com/ahmetsubasi/Lojiper`
 2. Proje dizinine gidin: `cd lojiper`
 3. Gerekli bağımlılıkları yüklemek için: `npm install`
 
@@ -32,8 +32,6 @@ Bu proje, Lojiper adlı bir uygulamanın kaynak kodunu içerir. Lojiper, [React 
 - Expo: v49.0.7
 - Expo-checkbox: v~2.4.0
 - Expo-datepicker: v^1.0.23
-- Diğer kullanılan kütüphaneler ve sürümleri listelenebilir.
-
 ## Sık Karşılaşılan Sorunlar
 
 ### Sorun: Bağımlılıklar yüklenemedi

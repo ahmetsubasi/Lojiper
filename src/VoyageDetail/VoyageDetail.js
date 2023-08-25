@@ -1,4 +1,9 @@
-import { View, Text, ScrollView, FlatList, TouchableWithoutFeedback, Button } from 'react-native'
+import { View, 
+  Text, 
+  FlatList, 
+  TouchableWithoutFeedback, 
+  Button 
+} from 'react-native'
 import React, {useState} from 'react'
 import styles from './VoyageDetail.styles'
 
@@ -12,7 +17,6 @@ const VoyageDetail = ({navigation}) => {
     { airline: 'Airline D', departureTime: '3:00 PM', availableSeats: [2, -4, -6, -10], price: 160, city:'Tekirdağ' },
     { airline: 'Airline E', departureTime: '11:00 AM', availableSeats: [1, -3, -7, -9], price: 140, city:'İzmir' },
     { airline: 'Airline F', departureTime: '13:00 PM', availableSeats: [10, -12, -14, -16], price: 180, city:'Ankara' },
-    // ... Diğer seferler
   ]);
 
   const handleBuy = () => {

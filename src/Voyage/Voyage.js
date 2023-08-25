@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
-import { ScrollView, View, Text, FlatList, TouchableWithoutFeedback } from 'react-native';
+import { View, 
+  Text, 
+  FlatList, 
+  TouchableWithoutFeedback 
+} from 'react-native';
 import styles from './Voyage.styles';
 
 const Voyage = ({navigation}) => {
@@ -10,7 +14,7 @@ const Voyage = ({navigation}) => {
     { id: '4', airline: 'Airline D', mission: 'But also the leap into electronic typesetting, remaining essentially unchanged.'},
     { id: '5', airline: 'Airline E', mission: 'It was popularised in the 1960s with the release of Letraset sheets containing'},
     { id: '6', airline: 'Airline F', mission: 'Lorem Ipsum passages'},
-    // ... Diğer firmalar
+
   ]);
 
   const handleSelect = () => {
